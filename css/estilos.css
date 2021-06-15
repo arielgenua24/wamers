@@ -1,0 +1,85 @@
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+   background-color: #F1F3F8; 
+   font-family: 'Assistant', sans-serif;
+
+}
+
+
+header {
+    height: 80px;
+    width: 100%;
+    background-color: #F1F3F8;
+    display: flex;
+    justify-content: space-between; /* me parece super importante como si tenes 2 objetos, la mejor manera de poner uno a la izquiera y otro a la derecha es con space-between. */
+}
+}
+.header__perfil {
+    align-items: flex-end;
+    
+}
+.header__details-perfil {
+    margin: 5px;
+}
+li {
+    list-style: none;
+}
+
+li a{ /* es interesante ver como para sacarle la decoracion a los lonk, siempre dbeen ser en la etiqueta "a". */
+    text-decoration: none;
+    color: #393B44;
+}
+
+li a:hover{ /* es interesante ver como para sacarle la decoracion a los lonk, siempre dbeen ser en la etiqueta "a". */
+    text-decoration: underline;
+    color: #393B44;
+}
+
+.header__img {
+    width: 50px;
+    height: 50px;
+}
+.header__perfil-img {
+    width: 40px;
+    height: 40px;
+
+}
+
+.header__details {
+    width: 60px;
+    right: -1px;
+position: absolute;
+}
+.main   {
+    height: 300px;
+
+}
+
+.main__title {
+    color: blue;
+    font-size: 25px;
+}
+.input  {       /*esta es la personalizacion de mi boton de busqueda */
+    background-color: #c5c5c546;
+    border: 2px solid  white;
+    border-radius: 25px;
+    color: rgb(131, 34, 34);
+    font-size: 16px;
+    height: 50px;
+    padding: 0px 20px;
+    width: 70%;
+    outline: none;
+}
+
+.input:hover {
+    box-shadow: 14px 10px 20px 5px rgba(41, 49, 139, 0.103);
+}
+::placeholder {
+    color: rgb(2, 2, 2); /* con esto personalizo el placeholder del input */
+}
+
+.header__perfil-img {
+    opacity: 80%;
+}
