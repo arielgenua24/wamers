@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head> 
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+.carousel {
+    width: 100%;
+    overflow: scroll;
+    padding: 30px;
+    position: relative; /*me sirve para aclarar a todos los elemntos que esten dentro de el, se ajusten justamente a el carousel */
+
+}
+
+.carousel__container {
+    white-space: nowrap;
+    margin: 70px 0px;
+    padding-bottom: 10px; /* este padding me srive para darle espacio a que la imagen trabajo sin cortes luego del el hover */
+}
+
+.carousel-item {
+    background-color: violet;
+    width: 150px;
+    height: 200px;
+    border-radius: 20px;
+    overflow: hidden;
+    margin-right: 10px;
+    display: inline-block;  /* esto es asi porque de lo contrario los elementos del carousel no podrian estar uno al lado del otro, y eso haria un efecto contrario a ser un carousel. */
+    cursor: pointer;
+    transition: 450ms all;
+    transform-origin: center left;
+
+}
+
+.carousel-item:hover ~ .carousel-item {
+    transform: translate3d(100px, 0, 0);
+
+}
+.carousel__container:hover .carousel-item {
+    opacity: 0.3;
+
+}
+.carousel__container:hover .carousel-item:hover {
+    transform: scale(1.3);
+    opacity: 1;
+}
+</style>
+<body>
+    <section class="carousel">
+        <div class="carousel__container">
+          <div  class="carousel-item"> 
+           <img  class="carousel-item__img" src="https://static.wikia.nocookie.net/bohemianrhapsody/images/b/b0/Bohemian_Rhapsody_Poster.jpg/revision/latest/scale-to-width-down/620?cb=20190807201125" alt="queen-film-poster"> 
+            <div class="carousel-item__details">
+            <img src="" alt="">
+            <img src="" alt="">    
+
+
+            </div>
+          
+        </div>
+         
+         
+         
+          <div  class="carousel-item"> </div>
+
+            
+        </div>
+
+
+
+    </section>
+
+</body>
+</html>
