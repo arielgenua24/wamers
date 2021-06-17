@@ -1,0 +1,69 @@
+body {
+    margin: 0;
+    font-family: ;
+    background: linear-gradient(rgb(80, 73, 110), rgb(39, 39, 107));
+}
+
+.header {
+    align-items: center;
+    color: seashell;
+    display: flex;
+    height: 100px;
+    justify-content: space-between;
+    top: 0px;
+    width: 100%;
+
+}
+
+.header__img {
+    margin-left: 30px;
+    width: 200px;
+}
+
+.login {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0px 30px;
+    min-height: calc(100vh - 200px); /* los 200px se refieren a que quiero que se me vea todo el 100vh, menos 200px de el header, ya que exactamente, el header valia eso... 200px */
+}
+.login__container {
+    background-color: rgba(255, 255, 255, 0.1);
+    border: 2px solid white;
+    border-radius: 4px;
+    color: white;
+    padding: 68px 68px  40px;
+    min-height: 700px;
+    width: 300px;
+}
+.login__container--form {
+    display: flex;
+    flex-direction: column;
+}
+
+.login__container--form label {
+    font-size: 14px;
+
+}
+
+.login__container--remember-me {
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+.login__container--remember-me a {
+    color: white;
+    font-size: 14px;
+    text-decoration: none;
+    text-decoration: none;
+   
+}
+.login__container--remember-me a:hover {
+  text-decoration: underline;
+   
+}
+
+
