@@ -56,12 +56,18 @@ position: absolute;
 }
 .main   {
     height: 300px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
 
 }
 
 .main__title {
     color: blue;
     font-size: 25px;
+    justify-content: center;
+    display: flex;
+    margin-bottom: 40px;
 }
 .input  {       /*esta es la personalizacion de mi boton de busqueda */
     background-color: #c5c5c546;
@@ -73,6 +79,8 @@ position: absolute;
     padding: 0px 20px;
     width: 70%;
     outline: none;
+    display: flex;
+    margin-left: 200px;
 }
 
 .input:hover {
@@ -85,4 +93,77 @@ position: absolute;
 
 .header__perfil-img {
     opacity: 80%;
+}
+
+.categories__title {
+    color: rgb(50, 52, 148);
+    font-size: 20px;
+    padding-left: 30px;
+    width: 100%;
+    margin-bottom: -20px;
+}
+
+.carousel {
+    margin-top: -50px;
+    width: 100%;
+    overflow: scroll;
+    padding: 30px;
+    position: relative; /*me sirve para aclarar a todos los elemntos que esten dentro de el, se ajusten justamente a el carousel */
+}
+
+.carousel__container {
+    white-space: nowrap;
+    margin: 70px 0px;
+    padding-bottom: 10px; /* este padding me srive para darle espacio a que la imagen trabajo sin cortes luego del el hover */
+}
+
+.carousel-item {
+    background-color: violet;
+    width: 150px;
+    height: 200px;
+    border-radius: 20px;
+    overflow: hidden;
+    margin-right: 10px;
+    display: inline-block;  /* esto es asi porque de lo contrario los elementos del carousel no podrian estar uno al lado del otro, y eso haria un efecto contrario a ser un carousel. */
+    cursor: pointer;
+    transition: 450ms all;
+    transform-origin: center left;
+    position: relative; /* este position relative me sirve en los casos en los que tenga etiquetas delante de la imagen de el carousel, la imagen quede detras y las etiquetas con su escritura quede delante */
+
+}
+
+.carousel-item:hover ~ .carousel-item {
+    transform: translate3d(100px, 0, 0);
+
+}
+.carousel__container:hover .carousel-item {
+    opacity: 0.3;
+
+}
+.carousel__container:hover .carousel-item:hover {
+    transform: scale(1.3);
+    opacity: 1;
+}
+
+.carousel-item__img {
+    width: 150px;
+    height: 200px;
+    object-fit: cover; /* esta propiedad me sirve para que la imagen no se vea mal en el width y el height */
+}
+.carousel-item__details {
+    background: linear-gradient(to top, rgba(0, 0, 0.9) 0%, rgba(0, 0, 0, 0) 100% );
+    font-size: 8px;
+    opacity: 0;
+    transition: 450ms opacity;
+    padding: 10px;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+
+}
+.carousel-item__details:hover {
+    opacity: 0.5;
+
 }
