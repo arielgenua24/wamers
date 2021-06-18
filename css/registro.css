@@ -1,0 +1,83 @@
+body {
+    margin: 0;
+    font-family: ;
+    background: linear-gradient(rgb(80, 73, 110), rgb(39, 39, 107));
+}
+
+.header {
+    align-items: center;
+    color: seashell;
+    display: flex;
+    height: 100px;
+    justify-content: space-between;
+    top: 0px;
+    width: 100%;
+
+}
+
+.header__img {
+    margin-left: 30px;
+    width: 200px;
+}
+
+.signIn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0px 30px;
+    min-height: calc(100vh - 150px); /* los 200px se refieren a que quiero que se me vea todo el 100vh, menos 200px de el header, ya que exactamente, el header valia eso... 200px */
+}
+.signIn__container {
+    background-color: rgba(255, 255, 255, 0.1);
+    height: 600px;
+    width: 400px;
+    border-radius: 8px;
+    border: solid oldlace;
+    align-items: center;
+}
+.signIn__container > h2 {
+    display: flex;
+    justify-content: center;
+    color: white;
+}
+.input {
+    width: 60%;
+    height: 13%;
+    padding-top: 1px;
+    margin-bottom: auto;
+    background: transparent;
+    border-left: none;
+    border-top: none;
+    border-right: none; 
+    border-bottom: solid rgba(230, 224, 224, 0.774);
+    outline: none;
+    color: white;
+    font-size: 15px;
+}
+
+.signIn__container--form {
+    display: flex;
+    height: 400px;
+    align-items:flex-start;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 10px;
+    padding-left: 15px;
+} 
+
+button {
+    margin-left: 39px;
+    margin-top: -20px;
+    width: 40%;
+    height: 60px;
+    padding: 9px 8px;
+    background: rgba(230, 224, 224, 0.116);
+    border-radius: 8px;
+    color: white;
+    outline: none;
+    border: none;
+    box-shadow: 1px 1px 6px rgba(230, 224, 224, 0.144);
+    font-size: 16px;
+    
+}
