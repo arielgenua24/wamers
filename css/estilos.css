@@ -121,7 +121,7 @@ position: absolute;
     background-color: violet;
     width: 150px;
     height: 200px;
-    border-radius: 20px;
+    border-radius: 25px;
     overflow: hidden;
     margin-right: 10px;
     display: inline-block;  /* esto es asi porque de lo contrario los elementos del carousel no podrian estar uno al lado del otro, y eso haria un efecto contrario a ser un carousel. */
@@ -141,7 +141,7 @@ position: absolute;
 
 }
 .carousel__container:hover .carousel-item:hover {
-    transform: scale(1.3);
+    transform: scale(1.4);
     opacity: 1;
     
 }
@@ -152,9 +152,6 @@ position: absolute;
     object-fit: cover; /* esta propiedad me sirve para que la imagen no se vea mal en el width y el height */
 }
 
-.carousel-item-boxShadow1 {
-    box-shadow: 10px 10px 10px rgba(206, 48, 9, 0.562);
-}
 
 
 .carousel-item__details {
@@ -198,4 +195,29 @@ position: absolute;
 }
 .footer > a:hover {
     text-decoration: underline;
+}
+
+.carousel-item-boxShadow:hover {
+    box-shadow: 10px 10px 10px rgba(236, 119, 10, 0.315);
+}
+.carousel-item-boxShadow2:hover {
+    box-shadow: 10px 10px 10px rgba(236, 213, 10, 0.315);
+}
+.carousel-item-boxShadow3:hover {
+    box-shadow: 10px 10px 10px rgba(78, 78, 78, 0.137);
+}
+.carousel-item-boxShadow4:hover {
+    box-shadow: 10px 10px 10px rgba(37, 36, 36, 0.158);
+}
+.carousel-item-boxShadow5:hover {
+    box-shadow: 10px 10px 10px rgba(100, 99, 99, 0.199);
+}
+.carousel-item-boxShadow6:hover {
+    box-shadow: 10px 10px 10px rgba(173, 33, 33, 0.199);
+}
+.carousel-item-boxShadow7:hover {
+    box-shadow: 10px 10px 10px rgba(100, 99, 99, 0.199);
+}
+.carousel-item-boxShadow8:hover {
+    box-shadow: 10px 10px 10px rgba(31, 224, 182, 0.199);
 }
